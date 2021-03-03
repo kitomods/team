@@ -201,7 +201,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Iae @${num.split('@')[0]}\n cola no grupo vadia *${mdata.subject}*`
+				teks = `Iae @${num.split('@')[0]}\n bem vindo ao grupo ${mdata.subject}`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -675,7 +675,7 @@ async function starts() {
 					hasil = `anime : ${nimek.data.anime}\nCharacter : ${nimek.data.character}\n${nimek.data.quote}`
 					reply(hasil)
 					break
-				case 'setppbot':
+				case 'novafoto':
 				client.updatePresence(from, Presence.composing) 
 				if (!isQuotedImage) return reply(`Envie fotos com legendas ${prefix}setbotpp ou tags de imagem que já foram enviadas`)
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -799,7 +799,7 @@ async function starts() {
                                      if (!isUser) return reply(mess.only.daftarB)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					linkgc = await client.groupInviteCode (from)
-					yeh = `https://chat.whatsapp.com/${linkgc}\n\nLink Group *${groupName}*`
+					yeh = `${groupName}\n venha fazer parte desse team modder tbm\n\n https://chat.whatsapp.com/${linkgc}\n\nLink Group `
 					client.sendMessage(from, yeh, text, {quoted: mek, detectLinks: false})
 					break
 				case 'ocr':
@@ -826,6 +826,10 @@ async function starts() {
 					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
 				  break
 	       case 'basesam':
+					if (!isGroup) return reply(mess.only.group)
+					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
+				  break
+		   case 'apks':
 					if (!isGroup) return reply(mess.only.group)
 					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
 				  break
@@ -858,7 +862,7 @@ async function starts() {
 				case 'fig':
 				case 'figif':
 				case ' figu':
-				case 'fi':
+				case 'f':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
