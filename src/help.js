@@ -1,17 +1,16 @@
 const help = (prefix) => {
 	return `
-   🐊🐊K҉ I҉T҉O҉B҉O҉T҉🐊🐊
+   𝑻𝑬𝑨𝑴 𝑀𝑂𝐷𝐷𝐸𝑅♞𝑹𝑨𝑵𝑲𝑰𝑵𝑮 𝐼𝑀𝑈𝑁𝐸
 𝗽𝗮𝗿𝗮 𝘂𝘀𝗮𝗿 𝗼 𝗯𝗼𝘁, 𝗺𝗮𝗻𝗱𝗮 ${prefix}𝗿𝗴 (𝗻𝗶𝗰𝗸)
 
 ◪ 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗖𝗢𝗘𝗦
   ❏ Prefix: 「  ${prefix}  」
-  ❏ Criador : K҉ I҉T҉O҉
+  ❏ Criador : 𝑲𝐈𝐓𝐎'𝐗𝐒
   ❏${prefix}criador
-  ❏${prefix}report (o bug q vc deseja reportar)
   ❏${prefix}criadorgrupo
-  
 ◪𝗠𝗘𝗡𝗨𝗦
-
+  ❏${prefix}apks (apks pra edita zap)
+  ❏${prefix}basesam (bases pra zap)
   ❏${prefix}kitomenu
   ❏${prefix}menuadmin
   ❏${prefix}menulinks (agr ta com imunes novos)
@@ -21,7 +20,6 @@ const help = (prefix) => {
 ▻${prefix}wiki (olha na wikipedia em indonesio)
 ▻${prefix}imagem (transforma fig em imagem)
 ▻${prefix}play (nome da musica q quer baixar)
-▻${prefix}ytmp4 (link do yt pra baixar o video)
 ▻${prefix}tts (pt) (texto q vc quer q fale)
 ▻${prefix}memeindo (meme em ingles)
 ▻${prefix}fig (imagem ou gif ate 6 seg)
