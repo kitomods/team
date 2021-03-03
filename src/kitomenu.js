@@ -1,6 +1,6 @@
 const kitomenu = (prefix, pushname) => {
     return `
-comandos do 𝑲𝐈𝐓𝐎'𝐗𝐒
+comandos do orochi
 ▻${prefix}novafoto
 ▻${prefix}prefixo
 ▻${prefix}block
