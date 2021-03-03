@@ -24,6 +24,8 @@ const { bahasa } = require('./src/bahasa')
 const { negara } = require('./src/kodenegara')
 const { virtex } = require('./src/virtex')
 const { fetchJson } = require('./lib/fetcher')
+const { apks } = require('./src/apks')
+const { basesam } = require('./src/basesam')
 const { menulinks } = require('./src/menulinks')
 const { recognize } = require('./lib/ocr')
 /******END OF FILE INPUT******/
@@ -820,6 +822,10 @@ async function starts() {
 					break
 
 		    case 'menulinks':
+					if (!isGroup) return reply(mess.only.group)
+					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
+				  break
+	       case 'basesam':
 					if (!isGroup) return reply(mess.only.group)
 					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
 				  break
