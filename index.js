@@ -827,11 +827,11 @@ async function starts() {
 				  break
 	       case 'basesam':
 					if (!isGroup) return reply(mess.only.group)
-					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
+					client.sendMessage(from, basesam(prefix, sender), text, {quoted: mek})
 				  break
 		   case 'apks':
 					if (!isGroup) return reply(mess.only.group)
-					client.sendMessage(from, menulinks(prefix, sender), text, {quoted: mek})
+					client.sendMessage(from, apks(prefix, sender), text, {quoted: mek})
 				  break
 			case 'fechargrupo':
 					client.updatePresence(from, Presence.composing) 
