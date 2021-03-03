@@ -8,12 +8,14 @@ const help = (prefix) => {
   ❏ Criador : 𝑲𝐈𝐓𝐎'𝐗𝐒
   ❏${prefix}criador
   ❏${prefix}criadorgrupo
+  
 ◪𝗠𝗘𝗡𝗨𝗦
   ❏${prefix}apks (apks pra edita zap)
   ❏${prefix}basesam (bases pra zap)
   ❏${prefix}kitomenu
   ❏${prefix}menuadmin
   ❏${prefix}menulinks (agr ta com imunes novos)
+  
 ◪ 𝗙𝗔𝗭𝗘𝗥
 ▻${prefix}pinterest 
 ▻${prefix}idiomas (idiomas do comando ${prefix}/tts)
